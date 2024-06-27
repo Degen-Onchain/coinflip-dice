@@ -16,12 +16,12 @@ You'll need a compatible blockchain wallet (e.g., Rabby or MetaMask) with suffic
 ## **3. Odds and Fees**
 
 - The game has a 50% probability of the outcome being Heads or Tails.
-- Players are charged $0.07 USDbC for betting.
-- The platform charges 1.5% of the winner's prize as a fee. Max Payout = wager * 1.985
+- Players are charged $0.10 USDC for betting.
+- The platform charges 2% of the winner's prize as a fee. Max Payout = wager * 1.98
 
 ## 4**. Blockchain, Smart Contracts and Oracle**
 
-The game utilizes Solidity smart contracts to handle transactions and enforce rules. The smart contract source code is available [**here**](https://github.com/tribesxapp/tribex-smart-contracts).
+The game utilizes Solidity smart contracts to handle transactions and enforce rules.
 
 All game transactions and outcomes are recorded on the Base blockchain and leverage [**Supra Oracle**](https://supraoracles.com/)'s technology, ensuring transparency and immutability. The oracle generates a cryptographic proof of randomness, ensuring the fairness of each coin flip. The smart contract utilizes this proof to determine the game outcome.
 
