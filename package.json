@@ -1,0 +1,41 @@
+{
+  "name": "tribex-betting-contracts",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "index.js",
+  "repository": "https://bitbucket.org/tribesx/tribexcontractsv2/src/main/",
+  "author": "gabesan21 <141934803+suportelider@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@chainlink/contracts": "^0.8.0",
+    "@openzeppelin/contracts": "^4.8.3",
+    "@truffle/contract": "^4.6.31",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "axios": "^1.5.1",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.5.2",
+    "fs-extra": "^11.1.1",
+    "solc": "^0.8.23-fixed",
+    "truffle": "^5.11.5",
+    "truffle-flattener": "^1.6.0",
+    "truffle-plugin-verify": "^0.6.7",
+    "web3": "^4.1.2"
+  },
+  "scripts": {
+    "clean-cache": "truffle networks --clean-cache",
+    "extract-abis": "node scripts/extractAbis.js",
+    "compile": "truffle compile",
+    "deploy": "truffle migrate --network",
+    "verify-games-hub": "truffle run verify GamesHub --license MIT --network",
+    "verify-token": "truffle run verify utils/FakeUSDCToken --license MIT --network",
+    "verify-token2": "truffle run verify utils/FakeUSDTToken --license MIT --network",
+    "verify-coin-flip-chainlink": "truffle run verify CoinFlipGame --license MIT --network",
+    "verify-dice-chainlink": "truffle run verify DiceChainlink --license MIT --network",
+    "verify-dice-supra": "truffle run verify DiceSupra --license MIT --network",
+    "verify-coin-flip-supra": "truffle run verify CoinFlipGameSupra --license MIT --network",
+    "play-coin-flip": "truffle exec scripts/play-coin-flip.js --network",
+    "play-dice": "truffle exec scripts/play-dice.js --network",
+    "send-tokens": "truffle exec scripts/send-tokens.js --network",
+    "fund-games": "truffle exec scripts/fund-games.js --network"
+  }
+}
